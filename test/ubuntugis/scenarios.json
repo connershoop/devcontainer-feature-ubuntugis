@@ -1,0 +1,18 @@
+{
+    "stable": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "../../src/ubuntugis": {
+                "unstable": false
+            }
+        }
+    },
+    "unstable": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "../../src/ubuntugis": {
+                "unstable": true
+            }
+        }
+    }
+}
