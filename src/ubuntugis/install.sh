@@ -31,21 +31,23 @@ fi
 SUPPORTED_OS_VERSION_CODENAMES="jammy focal bionic"
 
 # Check if the OS version is supported
-if [[ "${SUPPORTED_OS_VERSION_CODENAMES}" != *"${VERSION_CODENAME}"* ]]; then
+if echo "${SUPPORTED_OS_VERSION_CODENAMES}" | grep -qw "${VERSION_CODENAME}"; then
+    echo "Supported Ubuntu version '${VERSION_CODENAME}' found."
+else
     echo "Unsupported distribution version '${VERSION_CODENAME}'."
     echo "This feature only supports the following Ubuntu versions: ${SUPPORTED_OS_VERSION_CODENAMES}"
     exit 1
 fi
 
-unstable=${unstable:-undefined}
-echo "The provided boolean for unstable is: $unstable"
+UNSTABLE=${UNSTABLE:-undefined}
+echo "The provided boolean for unstable is: $UNSTABLE"
 apt update \
     && apt install -y --no-install-recommends \
         software-properties-common \
     && apt clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    && rm -rf /var/lib/apt/lists/* /var/tmp/*
 
-if [ "$unstable" = "true" ]; then
+if [ "$UNSTABLE" = "true" ]; then
     echo "Adding unstable PPA"
     add-apt-repository ppa:ubuntugis/ubuntugis-unstable
 else
@@ -61,4 +63,4 @@ apt update \
         pktools \
         qgis \
     && apt clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    && rm -rf /var/lib/apt/lists/* /var/tmp/*

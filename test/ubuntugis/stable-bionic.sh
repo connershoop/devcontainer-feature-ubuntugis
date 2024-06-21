@@ -10,10 +10,10 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "proj-bin available" which proj
-check "gdal-bin available" which gdalinfo
-check "grass available" which grass
-check "pktools available" which pkfilter
+check "proj available" which proj
+check "gdal available" which gdalinfo
+check "grass" which grass
+check "pkinfo available" which pkinfo
 check "qgis available" which qgis
 
 # Report result
