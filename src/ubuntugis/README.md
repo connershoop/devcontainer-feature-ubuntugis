@@ -1,5 +1,5 @@
 
-# Ubuntugis
+# Ubuntugis (ubuntugis)
 
 A feature to easily install gis packages from the [ubuntugis team](https://launchpad.net/~ubuntugis) to a codespace.
 
@@ -7,9 +7,7 @@ A feature to easily install gis packages from the [ubuntugis team](https://launc
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/hello:1": {
-        "version": "latest"
-    }
+    "ghcr.io/gatesfoundation/feature-gis/ubuntugis:0": {}
 }
 ```
 
@@ -17,10 +15,10 @@ A feature to easily install gis packages from the [ubuntugis team](https://launc
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
+| unstable | Use the unstable releases of ubuntugis packages. | boolean | false |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/hello/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/gatesfoundation/feature-gis/blob/main/src/ubuntugis/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
