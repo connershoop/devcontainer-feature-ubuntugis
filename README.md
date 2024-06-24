@@ -1,3 +1,28 @@
+# Ubuntugis feature
+This repository contains the github codespaces ubuntugis feature, which was built from the Dev Container Features: Self Authoring template repository (documentation below).  This feature adds the cli tools `proj`, `gdalinfo`, `gdalinfo`, `grass`, `pkinfo`, and `qgis` to codespaces built with one of the ubuntu stable releases: jammy (22.04), focal (20.04) or bionic (18.04). The feature was made possible with the [UbuntuGIS PPA's](https://wiki.ubuntu.com/UbuntuGIS), and provides the option to use the [stable release](https://launchpad.net/~ubuntugis/+archive/ubuntu/ppa) as well as the [unstable release](https://launchpad.net/~ubuntugis/+archive/ubuntugis-unstable) which "are more bleeding edge and while generally they should work well, they dont receive the same amount of quality assurance as our stable releases do".
+
+# Internal usage
+```jsonc
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/gatesfoundation/feature-gis/ubuntugis:latest": {}
+  },
+  "customizations": {
+        "codespaces": {
+            "repositories": {
+                "gatesfoundation/feature-gis": {
+                    "permissions": {
+                        "packages": "read",
+                        "contents": "read"
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
 # Dev Container Features: Self Authoring Template
 
 > This repo provides a starting point and example for creating your own custom [dev container Features](https://containers.dev/implementors/features/), hosted for free on GitHub Container Registry.  The example in this repository follows the [dev container Feature distribution specification](https://containers.dev/implementors/features-distribution/).  
