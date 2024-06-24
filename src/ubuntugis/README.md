@@ -1,7 +1,7 @@
 
 # Ubuntugis (ubuntugis)
 
-A feature to easily install gis packages from the [ubuntugis team](https://launchpad.net/~ubuntugis) to a codespace.
+A feature to easily install gis packages from the [ubuntugis team](https://launchpad.net/~ubuntugis) to a codespace. This feature only supports the ubuntu stable releases: jammy (22.04), focal (20.04) and bionic (18.04).
 
 ## Example Usage
 
