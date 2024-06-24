@@ -1,7 +1,7 @@
 
-# Hello, World! (hello)
+# Ubuntugis
 
-A hello world feature
+A feature to easily install gis packages from the [ubuntugis team](https://launchpad.net/~ubuntugis) to a codespace.
 
 ## Example Usage
 

@@ -1,0 +1,17 @@
+{
+    "name": "Ubuntugis",
+    "id": "ubuntugis",
+    "version": "0.1.0",
+    "description": "A feature to easily install gis packages from the [ubuntugis team](https://launchpad.net/~ubuntugis) to a codespace.",
+    "options": {
+        "unstable": {
+            "type": "boolean",
+            "default": false,
+            "description": "Use the unstable releases of ubuntugis packages."
+        }
+
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

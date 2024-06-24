@@ -1,0 +1,50 @@
+{
+    "stable-jammy": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+        "features": {
+            "ubuntugis": {
+                "unstable": false
+            }
+        }
+    },
+    "unstable-jammy": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+        "features": {
+            "ubuntugis": {
+                "unstable": true
+            }
+        }
+    },
+    "stable-focal": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
+        "features": {
+            "ubuntugis": {
+                "unstable": false
+            }
+        }
+    },
+    "unstable-focal": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
+            "features": {
+                "ubuntugis": {
+                    "unstable": true
+                }
+            }
+        },
+    "stable-bionic": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-18.04",
+        "features": {
+            "ubuntugis": {
+                "unstable": false
+            }
+        }
+    },
+    "unstable-bionic": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-18.04",
+        "features": {
+            "ubuntugis": {
+                "unstable": true
+            }
+        }
+    }
+}
