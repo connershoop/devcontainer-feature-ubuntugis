@@ -1,0 +1,8 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/connershoop/devcontainer-feature-ubuntugis/ubuntugis:latest": {
+      "unstable": true
+    }
+  }
+}
