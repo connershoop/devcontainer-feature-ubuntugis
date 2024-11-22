@@ -7,7 +7,7 @@ A feature to easily install gis packages from the [ubuntugis team](https://launc
 
 ```json
 "features": {
-    "ghcr.io/gatesfoundation/feature-gis/ubuntugis:1": {}
+    "ghcr.io/connershoop/devcontainer-feature-ubuntugis/ubuntugis:1": {}
 }
 ```
 
