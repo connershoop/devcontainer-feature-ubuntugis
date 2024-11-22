@@ -22,3 +22,11 @@ This repository contains the github codespaces ubuntugis feature, which was buil
   }
 }
 ```
+
+## Test it!
+### Create a codespace
+![alt text](assets/image.png)
+### Select the devcontainer
+![alt text](assets/image2.png)
+### Use cli tools!
+![alt text](assets/image3.png)
